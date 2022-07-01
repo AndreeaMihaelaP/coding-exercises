@@ -58,3 +58,15 @@ const logFirstTwoBoxes = (boxes) => {
 };
 
 logFirstTwoBoxes(boxes); // O(1)
+
+// Log all pairs of array
+
+const logPairsOfArray = (boxes) => {
+  for (i = 0; i < boxes.length; i++) {
+    for (j = 0; j < boxes.length; j++) {
+      console.log("Pair of i and j", boxes[i], boxes[j]);
+    }
+  }
+};
+
+logPairsOfArray(boxes);
